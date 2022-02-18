@@ -20,7 +20,7 @@ exports.up = function(knex, Promise) {
 		})
 		.createTable('resources', tbl => {
 			tbl.increments('resource_id');
-			tbl.string('resource_name', 128);
+			tbl.string('resource_name', 128).notNullable().unique();
 			tbl.string('resource_description', 256);
 		})
 		.createTable('project_resources', tbl => {

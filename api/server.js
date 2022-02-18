@@ -10,8 +10,8 @@ server.use(express.json());
 
 // Routers
 server.use('/api/projects', projectRouter);
-server.use('/api/resource', resourceRouter);
-server.use('/api/task', taskRouter);
+server.use('/api/resources', resourceRouter);
+server.use('/api/tasks', taskRouter);
 
 // Exports
 module.exports = server;

@@ -2,8 +2,11 @@ const db = require('../../data/dbConfig');
 
 // Models
 async function addNew(resource) {
-	const newResource = await db('resources').insert(resource);
-	return db('resources').where('resource_id', resource.resource_id);
+	const sent = await db('resources').insert(resource);
+	
+	const newResource = await db('resources').where('resource_id', sent[0]);
+	console.log(newResource);
+	return newResource;
 }
 
 function getAll() {

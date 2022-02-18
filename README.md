@@ -25,9 +25,9 @@ In this project you will be given a set of requirements and must design a databa
 2. [x] `index.js`
 3. [x] `api/server.js`
 4. [ ]`model.js` inside `api/project`, `api/resource` and `api/task`
-5. [ ] `router.js` inside `api/project`, `api/resource` and `api/task`
+5. [x] `router.js` inside `api/project`, `api/resource` and `api/task`
 6. [x] migration file(s)
-7. [ ] seed file(s) **optional**
+7. [x] seed file(s) **optional**
 
 ### Required Dependencies
 
