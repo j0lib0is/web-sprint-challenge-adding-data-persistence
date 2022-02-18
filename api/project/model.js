@@ -6,8 +6,10 @@ async function addNew(project) {
 	return db('projects').where('project_id', project.project_id);
 }
 
-function getAll() {
-	return db('projects');
+async function getAll() {
+	const result = await db('projects');
+
+	
 }
 
 // Exports
